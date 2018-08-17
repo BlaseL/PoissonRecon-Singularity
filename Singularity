@@ -13,7 +13,7 @@ echo "Let\'s do some Poisson Reconstruction!"
 apt get update && apt get upgrade
 touch /`date -u -Iseconds`
 
-apt install -y git gcc g++ make clang-6.0 bash-completion libpng libpng-dev
+apt install -y git gcc g++ make clang-6.0 bash-completion libpng-dev libjpeg-dev
 
 git clone https://github.com/mkazhdan/PoissonRecon
 cd PoissonRecon
