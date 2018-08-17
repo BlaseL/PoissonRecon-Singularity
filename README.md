@@ -11,15 +11,15 @@ See https://github.com/mkazhdan/PoissonRecon for details about the Poisson Recon
 Build with Singularity:
 
 ```
-git clone https://github.com/tyson-swetnam/PoissonRecon-Singularity
-cd PoissonRecon-Singularity
-sudo singularity build poisson.simg Singularity
+$ git clone https://github.com/tyson-swetnam/PoissonRecon-Singularity
+$ cd PoissonRecon-Singularity
+$ sudo singularity build poisson.simg Singularity
 ```
 
 Pull from the Singularity-Hub:
 
 ```
-singularity pull --name poisson.simg shub://tyson-swetnam/PoissonRecon-Singularity:latest
+$ singularity pull --name poisson.simg shub://tyson-swetnam/PoissonRecon-Singularity:latest
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ Use from the Singularity Shell prompt:
 
 ```
 $ singularity shell poisson.simg
-Singularity poisson2.simg:~/> PoissonRecon --help
+Singularity poisson.simg:~/> PoissonRecon --help
 ```
 
 Execute directly on the container:
