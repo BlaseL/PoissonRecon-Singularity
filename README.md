@@ -22,6 +22,8 @@ Pull from the Singularity-Hub:
 singularity pull --name poisson.simg shub://tyson-swetnam/PoissonRecon-Singularity:latest
 ```
 
+## Usage
+
 Use from the Singularity Shell prompt:
 
 ```
