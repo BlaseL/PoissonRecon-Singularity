@@ -17,9 +17,7 @@ apt install -y git gcc g++ make clang-6.0 bash-completion libpng libpng-dev
 
 git clone https://github.com/mkazhdan/PoissonRecon
 cd PoissonRecon
-make debug
-make install
-
+make all
 
 # in-container bind points for shared filesystems
 mkdir -p /extra /xdisk /uaopt /cm/shared /rsgrps
