@@ -3,26 +3,31 @@ OSVersion: bionic
 MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 %runscript
-echo "This container is for Poisson Reconstruction"
-echo "See https://github.com/mkazhdan/PoissonRecon for further detail"
-echo "Type: $ PoissonRecon --help for usage instructions"
-/bin/sh
+   echo "This container is for Poisson Reconstruction"
+   echo "See https://github.com/mkazhdan/PoissonRecon for further detail"
+   echo "Type: $ PoissonRecon --help for usage instructions"
+   /bin/bash
+
+%environment
+   PATH=/PoissonRecon/Bin/Linux:$PATH
+   export PATH
 
 %post
-echo "Let\'s do some Poisson Reconstruction!"
-apt get update && apt get upgrade
-touch /`date -u -Iseconds`
+   echo "Let\'s do some Poisson Reconstruction!"
+   apt get update && apt get upgrade
+   touch /`date -u -Iseconds`
 
-apt install -y git gcc g++ make clang-6.0 bash-completion libpng-dev libjpeg-dev
+   apt install -y git gcc g++ make bash-completion libpng-dev libjpeg-dev
 
-git clone https://github.com/mkazhdan/PoissonRecon
-cd PoissonRecon
-make all
+   git clone https://github.com/mkazhdan/PoissonRecon
+   cd PoissonRecon
+   make all
+   export PATH=/PoissonRecon/Bin/Linux/:$PATH
 
-# in-container bind points for shared filesystems
-mkdir -p /extra /xdisk /uaopt /cm/shared /rsgrps
+   # in-container bind points for shared filesystems
+   mkdir -p /extra /xdisk /uaopt /cm/shared /rsgrps
 
 %labels
-MAINTAINER Tyson Lee Swetnam tswetnam@cyverse.org
-DATE 2018-08-17
-VERSION 0.1
+   MAINTAINER Tyson Lee Swetnam tswetnam@cyverse.org
+   DATE 2018-08-17
+   VERSION 0.1
