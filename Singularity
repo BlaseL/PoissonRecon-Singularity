@@ -14,10 +14,10 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 %post
    echo "Let\'s do some Poisson Reconstruction!"
-   apt get update && apt get upgrade
+   apt-get update && apt-get upgrade
    touch /`date -u -Iseconds`
 
-   apt install -y git gcc g++ make bash-completion libpng-dev libjpeg-dev 
+   apt-get install -y git gcc g++ make bash-completion libpng-dev libjpeg-dev htop
 
    git clone https://github.com/mkazhdan/PoissonRecon
    cd PoissonRecon
