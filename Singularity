@@ -17,7 +17,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
    apt get update && apt get upgrade
    touch /`date -u -Iseconds`
 
-   apt install -y git gcc g++ make bash-completion libpng-dev libjpeg-dev
+   apt install -y git gcc g++ make bash-completion libpng-dev libjpeg-dev htop
 
    git clone https://github.com/mkazhdan/PoissonRecon
    cd PoissonRecon
