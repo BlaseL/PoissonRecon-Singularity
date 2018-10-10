@@ -17,17 +17,19 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
    apt get update && apt get upgrade
    touch /`date -u -Iseconds`
 
-   apt install -y git gcc g++ make bash-completion libpng-dev libjpeg-dev htop
+   apt install -y git gcc g++ make bash-completion libpng-dev libjpeg-dev 
+   # adding htop for process montoring
+   apt install -y htop
 
    git clone https://github.com/mkazhdan/PoissonRecon
    cd PoissonRecon
    make all
    export PATH=/PoissonRecon/Bin/Linux/:$PATH
 
-   # in-container bind points for shared filesystems
+   # in-container bind points for UA HPC shared filesystem
    mkdir -p /extra /xdisk /uaopt /cm/shared /rsgrps
 
 %labels
    MAINTAINER Tyson Lee Swetnam tswetnam@cyverse.org
-   DATE 2018-08-17
-   VERSION 0.1
+   DATE 2018-10-10
+   VERSION 0.2
