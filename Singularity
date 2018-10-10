@@ -18,8 +18,6 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
    touch /`date -u -Iseconds`
 
    apt install -y git gcc g++ make bash-completion libpng-dev libjpeg-dev 
-   # adding htop for process montoring
-   apt install -y htop
 
    git clone https://github.com/mkazhdan/PoissonRecon
    cd PoissonRecon
