@@ -4,7 +4,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 %runscript
    echo "This container is for Poisson Reconstruction"
-   echo "See https://github.com/mkazhdan/PoissonRecon for further detail"
+   echo "See https://github.com/BlaseL/PoissonRecon for further detail"
    echo "Type: $ PoissonRecon --help for usage instructions"
    /bin/bash
 
@@ -19,7 +19,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
    apt-get install -y git gcc g++ make bash-completion libpng-dev libjpeg-dev
 
-   git clone https://github.com/mkazhdan/PoissonRecon
+   git clone https://github.com/BlaseL/PoissonRecon
    cd PoissonRecon
    make all
    export PATH=/PoissonRecon/Bin/Linux/:$PATH
