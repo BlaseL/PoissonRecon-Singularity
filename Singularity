@@ -28,6 +28,6 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
    mkdir -p /extra /xdisk /uaopt /cm/shared /rsgrps
 
 %labels
-   MAINTAINER Tyson Lee Swetnam tswetnam@cyverse.org
-   DATE 2018-10-10
+   MAINTAINER Blase LaSala blasel@email.arizona.edu
+   DATE 2019-1-19
    VERSION 0.2
