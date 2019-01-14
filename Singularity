@@ -25,7 +25,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
    export PATH=/PoissonRecon/Bin/Linux/:$PATH
 
    # in-container bind points for UA HPC shared filesystem
-   mkdir -p /extra /xdisk /uaopt /cm/shared /rsgrps
+   mkdir -p /extra /xdisk /uaopt /cm /rsgrps
 
 %labels
    MAINTAINER Blase LaSala blasel@email.arizona.edu
