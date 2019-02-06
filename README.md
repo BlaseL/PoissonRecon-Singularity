@@ -11,7 +11,7 @@ See https://github.com/mkazhdan/PoissonRecon for details about the Poisson Recon
 Build with Singularity:
 
 ```
-$ git clone https://github.com/tyson-swetnam/PoissonRecon-Singularity
+$ git clone https://github.com/BlaseL/PoissonRecon-Singularity
 $ cd PoissonRecon-Singularity
 $ sudo singularity build poisson.simg Singularity
 ```
@@ -19,7 +19,7 @@ $ sudo singularity build poisson.simg Singularity
 Pull from the Singularity-Hub:
 
 ```
-$ singularity pull --name poisson.simg shub://tyson-swetnam/PoissonRecon-Singularity:latest
+$ singularity pull --name poisson.simg shub://BlaseL/PoissonRecon-Singularity:latest
 ```
 
 ## Usage
