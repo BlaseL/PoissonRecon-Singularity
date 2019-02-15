@@ -22,6 +22,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
    git clone https://github.com/BlaseL/PoissonRecon
    cd PoissonRecon
    make poissonrecon
+   make convertply
    export PATH=/PoissonRecon/Bin/Linux/:$PATH
 
    # in-container bind points for UA HPC shared filesystem
